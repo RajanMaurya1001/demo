@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .outer{
+            min-height: 400px;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            gap: 20px;
+            /* justify-content: flex-end; */
+            /* justify-content: flex-start; */
+            /* justify-content: center; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+            justify-content: space-between;
+            /* align-items: baseline; */
+            align-items: center;
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            /* flex-direction: column-reverse; */
+            flex-direction: row;
+            /* flex-wrap: column-wrap; */
+        }
+        .inner{
+            height: 50px;
+            width: 10%;
+            background: red;
+            
+
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="outer">
+        <div class="inner">column1</div>
+        <div class="inner">column2</div>
+        <div class="inner">column3</div>
+        <div class="inner">column4</div>
+        <div class="inner">column5</div>
+        <div class="inner">column6</div>
+        <div class="inner">column7</div>
+        <div class="inner">column8</div>
+    </div>
+    
+</body>
+</html>

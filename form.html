@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .form{
+            width: 40%;
+            margin: 50px auto;
+            border: 10px double #00f;
+            padding: 20px;
+        }
+        input{
+            width: 100%;
+            padding: 10px 20px;
+            height: 35px;
+            margin-top: 10px;
+            border-radius: 40px;
+        }
+        h1{
+            margin-top: 30px;
+            text-align: center;
+        }
+        fieldset{
+            padding: 10px 20px;
+        }
+        hr{
+            width: 200px;
+            height: 5px;
+            margin: auto;
+            background: #f00;
+        }
+        label{
+            font-size: 25px;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Form</h1>
+    <hr>
+    <form class="form" method="post" autocomplete="off" enc>
+       
+        <fieldset>
+            <legend> Student Form</legend>
+            <label for="en">Enroll Number</label>
+            <input type="text" id="en" value="E32145767" readonly disabled>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="enter your name" name="name">
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" placeholder="enter your password" name="password">
+            <label for="file">Upload File</label>
+            <input type="file" id="file" name="file">
+            <label for="pwd">Password</label>
+            <input type="" id="pwd" placeholder="enter your password" name="password">
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" placeholder="enter your password" name="password"> 
+            <input type="submit" value="Send Data"> 
+        </fieldset>
+
+    </form>
+   
+    
+</body>
+</html>

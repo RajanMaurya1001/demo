@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        table{
+            width: 100%;
+            margin: 50px auto;
+            border: 2px solid #000;
+            caption-side: bottom;
+            table-layout: fixed;
+            empty-cells: hide;
+            border-spacing: auto;
+        }
+
+        th,td{
+            border: 2px solid #000;
+            padding: 10px;
+            text-align: center;
+            overflow: auto;
+        }
+
+        caption{
+            padding:0px 0px 0px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Table</h1>
+    <hr>
+    <div class="table" align="center">
+        <table>  
+            <thead>
+                <tr>
+                    <th> sr. no.</th>
+                    <th>name</th>
+                    <th>Roll no</th>
+                    <th>course</th>
+                </tr>
+            </thead> 
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Rajan</td>
+                    <td>2404</td>
+                    <td>it</td>
+                    
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Rajan</td>
+                    <td>2404</td>
+                    <td>it</td>
+                    
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Rajan</td>
+                    <td>2404</td>
+                    <td>it</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td ></td>note: All Student in Techsima</td>
+                </tr>
+            </tfoot>
+            <caption>Table 1.1 Student table</caption>
+        </table>
+    </div>
+   
+</body>
+</html>

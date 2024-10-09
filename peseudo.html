@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            background: red;
+            color: #fff;
+        }
+        h1::after{
+            content: " private limited";
+            background: green;
+            color: #fff;
+        }
+
+        h1::before{
+            content: "techsima";
+            background: green;
+            color: #fff;
+        }
+        div
+        {
+          font-size: 40px;
+          height: 100px;
+        }
+
+        div::after{
+            content: "";
+            height: 5px;
+            width: 30px;
+            background: red;
+            position: absolute;
+            top: 40px;
+            left:60px;
+            opacity: 0;
+  
+
+        }
+
+        div::before{
+            content: "";
+            height: 5px;
+            width: 50px;
+            background: red;
+            position: absolute;
+            top: 40px;
+            /* left:8px;    */
+            opacity: 0;
+            transition: all ease 2s;
+
+        }
+
+        div:hover::after{
+            opacity: 1;
+           
+        }
+        div:hover::before{
+            opacity: 1;
+            left: 60px;
+            
+        }
+
+        input{
+            margin-top: 20px;
+            color: red;
+            width: 50%;
+        }
+        input::placeholder{
+            
+            color: red;
+        }
+        p::first-line{
+            color: blue;
+            font-size: 20px;
+        }
+        p::first-letter{
+            font-size: 80px;
+        }
+        p::selection{
+            background: #ccc;
+        }
+        p::marker{
+            background: #fff000;
+        }
+        input[type="submit"]{
+           width: 5%;
+            color: #0000ff;
+            /* height: 50px; */
+
+        }
+
+    </style>
+</head>
+<body>
+    <div>Rajan</div>
+    <h1> solution</h1>
+    <input type="text" placeholder="enter your name">
+    <input type="email" placeholder="enter your email">
+    <input type="submit">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ea obcaecati praesentium quae, illo laboriosam suscipit laborum, id minus magni ab in recusandae minima voluptates, quasi dignissimos! Eum, quia minus.
+    Natus nostrum velit earum quaerat voluptatum, debitis reiciendis. Eum error repudiandae illum velit sequi, quod qui aperiam tempore repellat nemo cum magnam! Fuga amet in rem hic non sit porro?
+    Cumque temporibus eveniet itaque, similique iure adipisci, vitae esse repellendus labore impedit autem consectetur veniam cum hic quisquam quo aspernatur corrupti nisi incidunt error officia quidem nobis sequi saepe. Iste!</p>
+    
+</body>
+</html>

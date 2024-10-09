@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header{
+            height: 100px;
+            width: 100%;
+            background: #00ffff;
+            display: flex;
+        }
+        .logo{
+            height: 100px;
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo .nav-link{
+            color: #000;
+            text-decoration: none;
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .navbar{
+            height: 100px;
+            width: 80%;
+            /* background: blue; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .navbar .nav-link{
+            color: #000;
+            padding: 0px 20px;
+            text-decoration: none;
+            font-size: 20px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="#" class="nav-link">TECHSIMA</a>
+        </div>
+        <div class="navbar">
+            <a href="#" class="nav-link">HOME</a>
+            <a href="#" class="nav-link">ABOUT</a>
+            <a href="#" class="nav-link">CONTACT</a>
+            <a href="#" class="nav-link">BLOG</a>
+            <a href="#" class="nav-link">GALLERY</a>
+        </div>
+
+    </header>
+</body>
+</html>
